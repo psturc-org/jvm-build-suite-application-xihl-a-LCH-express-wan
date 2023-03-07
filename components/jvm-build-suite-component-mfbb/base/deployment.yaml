@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-mfbb
     spec:
       containers:
-      - image: quay.io/psturc/test-images:ae85110bd76c4c6d9a39727bb8db1b89
+      - image: quay.io/psturc/test-images@sha256:3f0ce3cd549dca30efead095afa468303fa5640832955d156d14d3c5b5119088
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
