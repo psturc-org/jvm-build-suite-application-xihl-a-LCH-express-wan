@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-mfbb
+  namespace: jvm-build-sqwb-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/psturc/test-images@sha256:3f0ce3cd549dca30efead095afa468303fa5640832955d156d14d3c5b5119088
+        name: container-image
+        resources: {}
+status: {}
